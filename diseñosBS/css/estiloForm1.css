@@ -18,7 +18,7 @@ body{
 }
 
 .btn:hover{
-  box-shadow: 0px 0px 2px #6d6d6d;
+  box-shadow: 0px 0px 2px #6d6d6d;/*al pasar el mouse por encima le quita la sombra de 3px*/
 }
 
 #accept{
