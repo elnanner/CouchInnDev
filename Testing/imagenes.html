@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .grande{
+        width: 400px;
+        border: 7px solid ;
+        box-shadow: 0px 30px 25px #6d6d6d;
+        transition:500ms all ease;
+      }
+      .thumb{
+        width: 150px;
+        transition: 300ms all ease ;
+      }
+  </style>
+  </head>
+  <body>
+    <img class="thumb" id="thumb" src="http://lorempixel.com/800/600" alt="" onmouseover="zoom();" onmouseout="zoom();"/>
+    <form action="">
+      <input type="button" value="None" onclick="exit();"/>
+    </form>
+    <div class="div-enigma" id="enigma"  onmousedown="acierto(event)">
+      <h1>Clickea aca para decirte que boton del mouse apretaste</h1>
+    </div>
+    <style media="screen">
+      .div-enigma{
+        background: blue;
+
+      }
+      .red{
+        background: red;
+
+      }
+    </style>
+    <button id="boton">Boton</button>
+    <input type="text" id="input" >
+    <script type="text/javascript">
+    //---Este script agranda y achica la imagen
+      var img = document.getElementById('thumb');
+      var zoom = function zoom(){
+          var elemento = document.getElementById("thumb");
+          if(elemento.className == "thumb")
+            elemento.className = "grande";
+            else {
+              elemento.className = "thumb";
+            }
+      }
+    //--fin de agranda y achica imagen
+
+      var respuesta = function(){
+        alert("hola");
+      }
+      /*se autoinvoca con los parentesis asi: (function(){});/*/
+      function acierto (event){
+        switch (event.button) {
+          case 0:
+            alert("apretaste el izquierdo!");
+            break;
+          case 1:
+            alert("apretaste el scroll");
+            break;
+          case 2:
+            alert("apretaste el derecho");
+            break;
+
+
+
+        }
+      }
+    
+
+
+    </script>
+  </body>
+</html>

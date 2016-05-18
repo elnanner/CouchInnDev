@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #ccc;
+
+}
+header{
+  width: 100%;
+  background: #6d6d6d;
+  overflow: hidden;/*para impedir que haya error al usar float*/
+  margin-bottom: 20px;
+  float: left;
+}
+
+.wrapper{
+  margin: auto;/*para centrar*/
+  overflow: hidden;
+  width: 90%;
+
+
+}
+/*img{
+  float: left;
+  width: 60%;
+  background: #ccc;
+}*/
+nav{
+  margin: auto;/*para centrar*/
+  max-width: 1000px;
+  float: right;
+  overflow: hidden;
+}
+header nav a{/*a los links que esten dentro del nav les toco el margin derecho*/
+  margin: auto;
+  text-decoration: none;
+  float: right;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ccc;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+
+
+}
+
+/*definiendo comportamiento al pasar el mouse*/
+header nav a:hover{
+  background: #ccc;
+  color: #6d6d6d;
+/*  border-radius: 5px; no me gusta mucho jaja*/
+}
+
+header .logo{
+  background: #ccc;
+
+
+}

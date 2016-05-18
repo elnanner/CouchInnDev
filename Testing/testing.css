@@ -1,0 +1,28 @@
+div{
+  width: 200px;
+  height: 200px;
+  background: red;
+  display: inline-block;
+  //float: left;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+
+
+/*.int{
+  background-color: blue;
+  width: 120px;
+  height: 120px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}*/
+
+.verde{
+  background: green;
+  //border: 2px solid #000;
+}
+
+.rojo{
+  background: red;
+}
