@@ -1,0 +1,95 @@
+/*borrar los margenes que agrea el navegador por defecto*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #fffffa;
+}
+
+header{
+  width: 100%;
+
+}
+
+header nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #6d6d6d;
+
+}
+
+.menu_bar{
+  display: none;
+}
+header nav ul{
+  overflow: hidden;
+  list-style: none;
+}
+header nav ul li{
+  float: left;
+}
+
+header nav ul li a{
+  color:#96ac3c;
+  padding: 20px;
+  display: block;/*para poder usar el padding ya que es elemenot inline,solo modif a los lados*/
+  text-decoration: none;
+}
+
+header nav ul li span{
+  margin-right: 10px;
+
+}
+
+header nav ul li a:hover{
+  background: #ccc;
+}
+
+section{
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {/*media query para mostar el menu*/
+  header nav{
+    width: 80%;/*si le ponemos 100 abarca toda la pantalla y asi hace parecer que es un menu*/
+    height: 100%;
+    margin:0;/*reiniciamos los "20px auto" de arriba*/
+    position: fixed;
+
+  }
+
+  header nav ul li{
+    display: block;/*abarca todo lo que pueda de ancho*/
+    float: none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+
+  .menu_bar{
+    display: block;/*hacemos aparecer la barra de menu*/
+    width:100%;
+    background: #6d6d6d;
+
+  }
+
+  .menu_bar .bt-menu{
+    display:block;
+    padding: 20px;
+    background: #6d6d6d;
+    color: #96ac3c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .menu_bar span{/*el texto del menu lo floto a la derecha*/
+    float: right;
+    font-size: 40px;
+
+  }
+}
